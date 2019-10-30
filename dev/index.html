@@ -12,46 +12,69 @@
 	<!-- end Google Fonts -->
 
 	<!-- *** IMPORTANT *** DO NOT DELETE OR EDIT THE NEXT LINE OF CODE - IT IS IMPORTANT FOR THE GULP BUILD PROCESS. SEE YOUR INSTRUCTOR FIRST IF YOU WANT TO EDIT OR DELETE THIS LINE -->
+<<<<<<< HEAD
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="styles/styles.css?cb=1572453402365">
 	<link rel="stylesheet" href="styles/bootstrap.css">
+=======
+	
+	<!-- Font Awesome links -->
+	<link rel="stylesheet" href="fontawesome/css/fontawesome.css">
+	<link rel="stylesheet" href="fontawesome/css/brands.css">
+	<link rel="stylesheet" href="fontawesome/css/solid.css">
+
+	<link rel="stylesheet" href="styles/styles.css?cb=1572460765486">
+>>>>>>> 8f4beb7323f304bdd28b32f800db38313d0ad183
 
 </head>
 <body>
 <!-- Put your HTML code here... -->
 <div class="wrapper">
 	<header>
-		<h1>Food Explorer</h1>
-		<!-- <div>
-			<i class="fab fa-facebook-square"></i>
-		</div> -->
-		<button class="nav-button" id="nav-button"><span class="hamburger-icon">&#9776;</span><span class="sr-only">Menu</span></button>
-		<nav class="main-nav" id="main-nav">
-		<ul>
-			<li><a href="#">Home</a></li>
-			<li><a href="#">About</a></li>
-			<li><a href="#">Reviews</a></li>
-			<li><a href="#">Receipes</a></li>
-			<li><a href="#">Contact</a></li>
-		</ul>
-		</nav>
-		<div>
-			<input type="text">
-		</div>
+		<h1><img src="images/logo.png" alt="food_explorer"></h1>
 
+		<button class="hamburger" id="hamburger"></button>
+		<form action="#" class="search-box search-tablet" method="POST">
+				<label for="tablet-search" class="sr-only">Search: </label>
+				<input id="tablet-search" type="text" name="text" placeholder="Search">
+				<button class="search-btn" type="submit">
+					<span class="sr-only">Submit Search</span>
+				</button>
+		</form>
 		<div class="icon">
 			<ul>
-				<li class="social">
-					<a href="http://twitter.com/wesbos"><i class="fa fa-twitter"></i></a>
+				<li>
+					<a href="http://twitter.com/wesbos"><i class="fab fa-twitter"></i></a>
 				</li>
-				<li class="social">
-					<a href="http://facebook.com/wesbos.developer"><i class="fa fa-facebook"></i></a>
+				<li>
+					<a href="http://facebook.com/wesbos.developer"><i class="fab fa-facebook"></i></a>
 				</li>
-				<!-- <li class="social">
-					<a href="images/google-brands.svg"><i class="fab fa-google"></i></a>
-				</li> -->
+				<li>
+					<a href="http://google.com"><i class="fab fa-google"></i></a>
+				</li>
 			</ul>
 		</div>
+		<nav class="main-nav" id="main-nav">
+			<ul>
+				<li>
+					<form action="#" class="search-box search-mobile-desktop" method="POST">
+						<label for="mobile-desktop-search" class="sr-only">Search: </label>
+						<input id="mobile-desktop-search" type="text" name="text" placeholder="Search">
+						<button class="search-btn" type="submit">
+								<span class="sr-only">Submit Search</span>
+						</button>
+					</form>
+				</li>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Reviews</a></li>
+				<li><a href="#">Receipes</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</nav>
+
+		
+		
 	</header>
 </div>
 <div class="container">
@@ -59,7 +82,7 @@
 		<div class="col-sm-12 col-md-12 col-lg-12 d-flex align-items-stretch">
 			<div class="cards">
 				<div class="card-body">
-					<h2 class="card-title">foodiestuff</h2>
+					<h1 class="card-title">foodiestuff</h1>
 					<p class="card-subtitle mb-2 ">foodstuffmenudgunk</p>
 					<div>
 						<img src="images/pasta.jpg" alt="pasta">
@@ -74,7 +97,7 @@
 		<div class="col-sm-12 col-md-12 col-lg-12 d-flex align-items-stretch">
 			<div class="cards">
 				<div class="card-body">
-					<h2 class="card-title">foodiewoody</h2>
+					<h1 class="card-title">foodiewoody</h1>
 					<p class="card-subtitle mb-2 ">cheese and gas</p>
 					<div>
 						<img src="images/ramen.jpg" alt="pasta">
@@ -112,7 +135,8 @@
 		</div>
 	</article>
 	<article class="cuisines">
-		<div class="ul">
+		<div class=cuisine-title>
+		<h2 id="cuisine">CUISINES</h2>
 			<ul>
 				<li>
 					<p>American (95)</p>
@@ -166,14 +190,18 @@
 					<p>Mexican (25)</p>
 				</li>
 			</ul>
-		</div>
+		</div><!--ul-->
 	</article>
 </div>
 
 <!-- *** IMPORTANT *** If you do not require the jQuery Library then feel free to delete the next line -->
 <script src="scripts/libs/jquery/jquery-3.4.1.min.js"></script>
 <!-- *** IMPORTANT *** DO NOT DELETE OR EDIT THE NEXT LINE OF CODE - IT IS IMPORTANT FOR THE GULP BUILD PROCESS. SEE YOUR INSTRUCTOR FIRST IF YOU WANT TO EDIT OR DELETE THIS LINE -->
+<<<<<<< HEAD
 <script src="scripts/script.min.js?cb=1572453402365"></script>
+=======
+<script src="scripts/script.min.js?cb=1572460765486"></script>
+>>>>>>> 8f4beb7323f304bdd28b32f800db38313d0ad183
 <!-- *** IMPORTANT *** DO NOT ADD ADDITIONAL SCRIPT LINKS HERE...If you want to add additional scripts simply save the script files to the "dev/scripts" directory (for your custom scripts) and the 'dev/scripts/libs' directory for any jQuery plugins or other JavaScript libraries and Gulp will concatenate and minify them into the "script.min.js" file above. See the project instructions for details -->	
 <script src="scripts/bootstrap.js"></script>
 </body>

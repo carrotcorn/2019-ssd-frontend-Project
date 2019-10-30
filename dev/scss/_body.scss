@@ -2,31 +2,3 @@
 body {
     background-color: $bg-color;
 }
-.cards { 
-    width: 90%;
-    height: 420px;
-    padding: 20px;
-    margin:10px 0 0 0;
-    border: 1px solid grey;
-    box-sizing: border-box;
-    font-family: $navbar-font;
-    // @include margin-center;
-}
-h2.card-title{
-    color: $text-color-dark;
-}
-div.card-footer{
-    background-color: #fff;
-    border-top: none;
-    
-}
-div.card-body{
-    margin:0;
-}
-a.btn {
-    margin-left:70%;
-    margin-bottom: 40px;
-}
-li{
-    list-style-type: none;
-}

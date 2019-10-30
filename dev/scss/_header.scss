@@ -1,17 +1,32 @@
 // Header styles
 header {
-    background-color: $navbar-color;
+    background-color: $header-color;
     padding: $padding/2 $padding;
     @include flex-layout-row;
     align-items: center;
 
-    h1 {
-        @include flatten;
-        color: $text-color-light;
-        font-size: 2em;
+    .icon{
+        display: none;
+    }
+
+    @include mq($desktopMedium){
+        .icon{
+            display: block;
+            ul{
+                @include flex-layout-row;
     
-        // @include mq($phoneLandscape){
-        //     font-size: 2em;
-        // }
+                li{
+                    padding: 5px 10px;
+                    background-color:transparent;
+                    list-style: none;
+                        i{
+                            list-style: none;
+                            color:$navbar-color;
+                            font-size: 2em;
+                        }
+                      
+                    }
+            }
+        } 
     }
 }
