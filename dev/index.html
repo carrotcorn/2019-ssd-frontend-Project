@@ -14,7 +14,7 @@
 	<!-- *** IMPORTANT *** DO NOT DELETE OR EDIT THE NEXT LINE OF CODE - IT IS IMPORTANT FOR THE GULP BUILD PROCESS. SEE YOUR INSTRUCTOR FIRST IF YOU WANT TO EDIT OR DELETE THIS LINE -->
 	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"> -->
 	<link rel="stylesheet" href="styles/styles.css?cb=1572453402365">
-	<link rel="stylesheet" href="styles/bootstrap.css">
+	<!-- <link rel="stylesheet" href="styles/bootstrap.css"> -->
 	
 	<!-- Font Awesome links -->
 	<link rel="stylesheet" href="fontawesome/css/fontawesome.css">
@@ -77,136 +77,135 @@
 			</nav>
 			
 	</header>
-
-	<picture>
-		<figure>
-			<img src="/images/mussel.jpg"
-			srcset="images/mussel.jpg 1000w,
-					images/mussel-small.jpg 700w"
-			alt="Mussel"
-			sizes= "(max-width: 559px) calc(100vw - 110px),
-			(max-width: 776px) calc(49vw - 110px)
-			320px" >
-			<figcaption>Lorem ipsum dolor</figcaption>
-		</figure>
-	</picture>
-
-	<figure>
-		<img src="/images/salad.jpg" alt="Salad">
-		<figcaption>Lorem ipsum dolor</figcaption>
-	</figure>
-
-	<figure>
-		<img src="/images/pancake.jpg" alt="Salad">
-		<figcaption>Lorem ipsum dolor</figcaption>
-	</figure>
-
-</div>	
-
-<div class="container">
-	<div class="cards">
-		<h2>foodiestuff</h2>
-		<p>foodstuffmenudgunk</p>
-		<div>
-			<img src="images/pasta.jpg" alt="pasta">
+<main>
+	<div class="gallery">
+		<div class="gallery-item galler-item-01">
+			<figure>
+				<picture>
+					<source srcset="images/mussel_small.jpg" media="(max-width: 600px)">
+					<img src="/images/mussel.jpg" alt="Mussel">
+				</picture>
+				<figcaption>Lorem ipsum dolor</figcaption>
+			</figure>
 		</div>
-		<div class="col-sm-12 col-md-12 col-lg-12 d-flex align-items-stretch">
-			<div class="card">
-				<div class="card-body">
-					<h1 class="card-title">foodiewoody</h1>
-					<p class="card-subtitle mb-2 ">cheese and gas</p>
-					<div>
-						<img src="images/ramen.jpg" alt="pasta">
-					</div>
-					<p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates veritatis a harum atque exercitationem sequi doloremque beatae earum vel aspernatur.</p>
-				</div>
-					<div class="card-footer">
-							<a href="#" class="btn btn-primary">READ MORE...</a>
-					</div>
-			</div>
+		<div class="gallery-item galler-item-02">
+			<figure>
+				<img src="/images/salad.jpg" alt="Salad">
+				<figcaption>Lorem ipsum dolor</figcaption>
+			</figure>
 		</div>
-	</div>
+		<div class="gallery-item galler-item-03">
+			<figure>
+				<img src="/images/pancake.jpg" alt="Salad">
+				<figcaption>Lorem ipsum dolor</figcaption>
+			</figure>
+		</div>
+	</div><!-- end gallery -->
 	<section class="recipes">
-			<h1>Latest Recipies</h1>
-			<ul>
-				<li>
+		<h2>Latest Recipies</h2>
+		<ul>
+			<li>
 				<img src="images/lamb_tb.jpg" alt="steak">
-					<p>Meat</p>
-				</li>
-				<li class="dark">
+				<p>Meat</p>
+			</li>
+			<li class="dark">
 				<img src="images/breakfast_tb.jpg" alt="steak">
 				<p>Meat</p>
-				</li>
-				<li>
+			</li>
+			<li>
 				<img src="images/calamari_tb.jpg" alt="steak">
 				<p>Meat</p>
-				</li>
-				<li class="dark">
+			</li>
+			<li class="dark">
 				<img src="images/steak_tb.jpg" alt="steak">
 				<p>Meat</p>
-				</li>
-			</ul>
-	</section>
-	<article class="cuisines">
-		<div class=cuisine-title>
+			</li>
+		</ul>
+	</section><!-- end recipes -->
+	<section class="cuisines">
 		<h2 id="cuisine">CUISINES</h2>
-			<ul>
-				<li>
-					<p>American (95)</p>
-				</li>
-				<li>
-					<p>Cambodain (3)</p>
-				</li>
-				<li>
-					<p>Filipino (8)</p>
-				</li>
-				<li>
-					<p>German (7)</p>
-				</li>
-				<li>
-					<p>Indian (44)</p>
-				</li>
-				<li>
-					<p>Jamaican (7)</p>
-				</li>
-				<li>
-					<p>Korean (120)</p>
-				</li>
-				<li>
-					<p>Mediterranean (9)</p>
-				</li>
-				<li>
-					<p>Southern (14)</p>
-				</li>
-				<li>
-					<p>Asian (33)</p>
-				</li>
-				<li>
-					<p>Chinese (281)</p>
-				</li>
-				<li>
-					<p>French (40)</p>
-				</li>
-				<li>
-					<p>Greek (29)</p>
-				</li>
-				<li>
-					<p>Italian (60)</p>
-				</li>
-				<li>
-					<p>Japanese (202)</p>
-				</li>
-				<li>
-					<p>Malaysian (12)</p>
-				</li>
-				<li>
-					<p>Mexican (25)</p>
-				</li>
-			</ul>
-		</div><!--ul-->
-	</article>
-</div>
-
+		<ul>
+			<li>
+				<p>American (95)</p>
+			</li>
+			<li>
+				<p>Cambodain (3)</p>
+			</li>
+			<li>
+				<p>Filipino (8)</p>
+			</li>
+			<li>
+				<p>German (7)</p>
+			</li>
+			<li>
+				<p>Indian (44)</p>
+			</li>
+			<li>
+				<p>Jamaican (7)</p>
+			</li>
+			<li>
+				<p>Korean (120)</p>
+			</li>
+			<li>
+				<p>Mediterranean (9)</p>
+			</li>
+			<li>
+				<p>Southern (14)</p>
+			</li>
+			<li>
+				<p>Asian (33)</p>
+			</li>
+			<li>
+				<p>Chinese (281)</p>
+			</li>
+			<li>
+				<p>French (40)</p>
+			</li>
+			<li>
+				<p>Greek (29)</p>
+			</li>
+			<li>
+				<p>Italian (60)</p>
+			</li>
+			<li>
+				<p>Japanese (202)</p>
+			</li>
+			<li>
+				<p>Malaysian (12)</p>
+			</li>
+			<li>
+				<p>Mexican (25)</p>
+			</li>
+		</ul>
+	</section><!-- end cuisines -->
+	<section class="posts">
+		<article class="card post">
+			<h2>Lorem ipsum dolor sit amet</h2>
+			<p class="author">Posted by Mike on Sunday, August 25, 2013</p>
+			<figure>
+				<img src="images/pasta.jpg" alt="Pasta">
+			</figure>
+			<p class="lead-in-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto similique at, ex excepturi repudiandae doloribus nostrum neque natus sapiente.</p>
+			<a href="#0" class="btn-read-more">Read More...</a>
+		</article>
+		<article class="card post">
+			<h2>Deserunt similique provident culpa ad!</h2>
+			<p class="author">Posted by Mike on Monday, July 29, 2013</p>
+			<figure>
+				<img src="images/ramen.jpg" alt="Ramen">
+			</figure>
+			<p class="lead-in-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto similique at, ex excepturi repudiandae doloribus nostrum neque natus sapiente.</p>
+			<a href="#0" class="btn-read-more">Read More...</a>
+		</article>
+		<div class="older-posts">
+			<a href="#0"><span class="sr-only">Older Posts</span>ADD IMAGE!!!</a>
+		</div>
+	</section><!-- end posts -->
+</main>
+<footer>
+	<p>Add stuff here...</p>
+</footer>
+</div><!-- end of wrapper -->
 <!-- *** IMPORTANT *** If you do not require the jQuery Library then feel free to delete the next line -->
 <script src="scripts/libs/jquery/jquery-3.4.1.min.js"></script>
 <!-- *** IMPORTANT *** DO NOT DELETE OR EDIT THE NEXT LINE OF CODE - IT IS IMPORTANT FOR THE GULP BUILD PROCESS. SEE YOUR INSTRUCTOR FIRST IF YOU WANT TO EDIT OR DELETE THIS LINE -->
