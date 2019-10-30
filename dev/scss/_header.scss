@@ -1,20 +1,48 @@
 // Header styles
 header {
     background-color: $header-color;
-    padding: $padding/2 $padding;
+    padding: $padding $padding/2;
     @include flex-layout-row;
     align-items: center;
+
+
+    .logo{
+        background-image: url("../images/small_logo.jpg");
+        width: 55px;
+        height: 35px;
+        padding: 0 10px;
+    }
 
     .icon{
         display: none;
     }
 
+    @include mq($phoneLandscape){
+        .logo{
+            background-image: url("../images/logo.png");
+            width: 315px;
+            height: 35px;
+        }
+
+        .icon{
+            display: none;
+        }
+    }
+
     @include mq($desktopMedium){
+
+        @include flex-layout-row;
+        padding: $padding/2 $padding/4;
+        .logo{
+            order: 1;
+        }
+        
         .icon{
             display: block;
+            order: 1;
             ul{
+               
                 @include flex-layout-row;
-    
                 li{
                     padding: 5px 10px;
                     background-color:transparent;
@@ -27,6 +55,9 @@ header {
                       
                     }
             }
-        } 
+        }
+        
+           
+        
     }
 }

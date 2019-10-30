@@ -21,7 +21,7 @@ form{
     @include mq($desktopMedium){
         
         &.search-tablet {
-            display: block;
+            display: none;
         }
            
     }
