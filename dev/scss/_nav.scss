@@ -33,12 +33,13 @@ nav {
 
     }
 
-    @include mq($phoneLandscape) {
+    @include mq($desktopMedium) {
     
         display: block;
         height: $height;
         border-top: $border;
-
+        flex: 1 1 100%;;
+        order: 2;
         ul {
             display: flex;
         }

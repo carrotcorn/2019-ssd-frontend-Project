@@ -11,5 +11,9 @@
     &:hover {
         background-position: 0 35px;
     }
+
+    @include mq($desktopMedium) {
+        display: none;
+    }
 }
 
