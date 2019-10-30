@@ -29,17 +29,9 @@ header {
         }
     }
 
-    @include mq($desktopMedium){
-
-        @include flex-layout-row;
-        padding: $padding/2 $padding/4;
-        .logo{
-            order: 1;
-        }
-        
+    @include mq($tabletLandscape){
         .icon{
             display: block;
-            order: 1;
             ul{
                
                 @include flex-layout-row;
@@ -55,6 +47,22 @@ header {
                       
                     }
             }
+        }
+    }
+
+    @include mq($desktopMedium){
+
+        @include flex-layout-row;
+        padding: $padding/4;
+        .logo{
+            order: 1;
+            // flex: 0 0 50%;
+        }
+        
+        .icon{
+            display: block;
+            // flex: 0 0 50%;
+            order: 1;
         }
         
            
