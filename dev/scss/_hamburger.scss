@@ -1,0 +1,15 @@
+.hamburger{
+    display: block;
+    width: 35px;
+    height: 35px;
+    background-image: url("../images/menu.png");
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    &:hover {
+        background-position: 0 35px;
+    }
+}
+

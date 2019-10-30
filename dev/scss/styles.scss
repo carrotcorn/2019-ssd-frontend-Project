@@ -1,9 +1,9 @@
 @charset "utf-8";
 /* CSS Document */
 
-// Imports for icons
-@import 'fontawesome/fontawesome';
-@import 'fontawesome/brands';
+// // Imports for icons
+// @import 'fontawesome/fontawesome';
+// @import 'fontawesome/brands';
 
 // Utility Imports
 @import '_variable';
@@ -17,12 +17,17 @@
 @import '_body';
 @import '_wrapper';
 @import '_header';
+@import '_form';
 @import '_nav';
+@import '_hamburger';
 // @import 'hamburger';
 
 // @import 'main';
 // @import 'sections';
 // @import 'footer';
+
+// Utilities
+@import 'utilities';
 
 
 

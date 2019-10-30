@@ -1,0 +1,28 @@
+form{
+    border: 1px solid white;
+    background-color: $bg-color;
+    border-radius: 5px;
+    
+    &.search-tablet {
+        display: none;
+    }
+
+    input{
+        background-color: $bg-color;
+        border:none;
+        padding: 2px 5px;
+    }
+    .search-btn{
+        background-image: url("../images/search.png");
+        padding: 12px;
+        border: none;
+    }
+
+    @include mq($desktopMedium){
+        
+        &.search-tablet {
+            display: block;
+        }
+           
+    }
+}
