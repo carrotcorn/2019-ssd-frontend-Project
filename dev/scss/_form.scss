@@ -2,7 +2,7 @@ form{
     border: 1px solid white;
     background-color: $bg-color;
     border-radius: 5px;
-    
+    height: 40px;
     &.search-tablet {
         display: none;
     }
@@ -18,11 +18,25 @@ form{
         border: none;
     }
 
+    @include mq($tabletLandscape){
+        &.search-tablet {
+            display: block;
+        }
+        &.search-mobile-desktop{
+            display: none;
+        }
+
+    }
+
     @include mq($desktopMedium){
         
         &.search-tablet {
             display: none;
         }
-           
+
+        &.search-mobile-desktop{
+            display: block;
+        }
+        
     }
 }

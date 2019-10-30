@@ -2,8 +2,6 @@
 nav {
     // locally scoped variable
     $height: 40px;
-    $border: 1px solid white;
-    
     background-color: $navbar-color;
     display: none;
 
@@ -19,7 +17,7 @@ nav {
     a {
         display: block;
         line-height: 50px;
-        border-top: $border;
+        // border-top: $border;
         color: $text-color-light;
         line-height: $height;
         text-align: center;
@@ -33,11 +31,10 @@ nav {
 
     }
 
-    @include mq($desktopMedium) {
-    
+    @include mq($tabletLandscape){
         display: block;
         height: $height;
-        border-top: $border;
+        // border-top: $border;
         flex: 1 1 100%;;
         order: 2;
         ul {
@@ -50,13 +47,17 @@ nav {
 
         a {
             line-height: $height;
-            border-right: $border;
-            border-top: $border;
+            // border-right: $border;
+            // border-top: $border;
             @at-root nav li:last-child a {
                 border-right: none;
             }
         }
-        
+    }
+
+    @include mq($desktopMedium) {
+    
+        display: block;
     }
 
 }
