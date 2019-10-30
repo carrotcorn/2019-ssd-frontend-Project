@@ -6,4 +6,35 @@ main {
         margin-top: $padding;
     }
     
+    .gallery{
+        .gallery-item{
+            position: relative;
+           
+            figure{
+                display: inline-block;
+                margin: 0;
+                padding: 0;
+                width: 100%;
+
+                img{
+                    display: block;
+                    height: 100%;
+                    width: 100%;
+
+                }
+                figcaption{
+                    position: absolute;
+                    // display: inline-block;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    margin: 0;
+                    padding: 10px;
+                    background-color: rgba(61, 58, 58, 0.781);
+                    color: white;
+                }
+            }
+        }
+        
+    }
 }
