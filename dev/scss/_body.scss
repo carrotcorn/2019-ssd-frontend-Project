@@ -2,11 +2,3 @@
 body {
     background-image: url("/images/bg.jpg");
 }
-.cards { 
-    width: 300px;
-    height: 500px;
-    padding: 50px;
-    border: 1px solid red;
-    box-sizing: border-box;
-    @include margin-center;
-}

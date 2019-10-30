@@ -1,0 +1,27 @@
+
+.cuisines{
+  background-color: #fff;
+  min-width: 200px;
+  
+
+h2{
+  color: white;
+  background-color:$navbar-color;
+  padding-left: 10px;
+}
+ul{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height:100%;
+  padding:0;
+  padding: 10px;
+  
+}
+li{
+  list-style-type: none;
+  &:nth-child(odd){width: 110px;}
+  &:nth-child(even){width: calc(100% - 110px);padding-left: 10px;}
+  
+}
+}
