@@ -4,9 +4,13 @@ nav {
     $height: 40px;
     background-color: $navbar-color;
     display: none;
-
+    width: 100%;
+    
     .show & {
         display: block;
+        transition: height 0.3s ease, visibility 0s;
+        visibility: visible;
+        // height: 253px;
     }
 
     ul {
@@ -17,8 +21,8 @@ nav {
     a {
         display: block;
         line-height: 50px;
-        // border-top: $border;
-        color: $text-color-light;
+        color:white;
+        border-top: $border;
         line-height: $height;
         text-align: center;
         font-size: 1.2em;
@@ -34,7 +38,7 @@ nav {
     @include mq($tabletLandscape){
         display: block;
         height: $height;
-        // border-top: $border;
+        border-top: $border;
         flex: 1 1 100%;;
         order: 2;
         ul {
@@ -47,8 +51,8 @@ nav {
 
         a {
             line-height: $height;
-            // border-right: $border;
-            // border-top: $border;
+            border-right: $border;
+            border-top: $border;
             @at-root nav li:last-child a {
                 border-right: none;
             }
