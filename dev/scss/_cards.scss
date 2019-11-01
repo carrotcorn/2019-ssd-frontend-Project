@@ -14,7 +14,7 @@ article{
  margin-top:10px;
  border: grey solid 1px;
  height: 400px;
- background-color: white;
+ background-color: white;                                                         ;
 }
 h2{
   font-family: $heading-font;
@@ -28,7 +28,7 @@ img{
   position:center;
 }
 
-a {
+#card {
   margin-left:70%;
   margin-bottom: 40px;
   background-color: $text-color-dark;
@@ -45,7 +45,7 @@ a {
     height:475px;
   }
   figure{
-    padding-left:171.5px;
+    padding-left:25%;
   }
 
 }
