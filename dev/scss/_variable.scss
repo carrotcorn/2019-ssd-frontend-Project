@@ -25,17 +25,6 @@ $gutter: 2;
 // $c -> the number of columns in a row
 // $g -> the gutter amount
 
-// @function colWidth($c, $g: 2){
-//     @return ((100 - $g * ($c - 1)) / $c) * 1%;
-// }
-
-// $one-col: 100%;
-// $two-col: colWidth(2);
-// $three-col: colWidth(3);
-// $four-col: colWidth(4);
-// $five-col: colWidth(5);
-// $six-col: colWidth(6);
-
 @function em($px, $bc: 16){
     @return #{$px/$bc}em;
 }
