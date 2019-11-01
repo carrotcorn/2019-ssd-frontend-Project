@@ -12,7 +12,7 @@
 }
 article{
  margin-top:10px;
- border: grey solid 1px;
+ 
  height: 400px;
  background-color: white;                                                         ;
 }
@@ -24,8 +24,8 @@ h2{
 p{
   padding-left:20px;
 }
-img{
-  position:center;
+#cardPic {
+  width:100%;
 }
 
 #card {
@@ -44,8 +44,8 @@ img{
   article{
     height:475px;
   }
-  figure{
-    padding-left:25%;
-  }
+  // figure{
+  //   padding-left:25%;
+  // }
 
 }
