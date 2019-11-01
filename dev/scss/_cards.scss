@@ -1,26 +1,51 @@
 .cards { 
   width: 90%;
-  height: 420px;
+  
   padding: 20px;
   margin:10px 0 0 0;
   border: 1px solid grey;
   box-sizing: border-box;
   font-family: $navbar-font;
   background-color: #fff;
+  max-width:342.61px;
   // @include margin-center;
 }
-h1{
+article{
+ margin-top:10px;
+ border: grey solid 1px;
+ height: 400px;
+ background-color: white;
+}
+h2{
+  font-family: $heading-font;
   color: $text-color-dark;
+  padding-left:20px;
 }
-div.card-footer{
-  background-color: #fff;
-  border-top: none;
-  
+p{
+  padding-left:20px;
 }
-div.card-body{
-  margin:0;
+img{
+  position:center;
 }
-a.btn {
+
+a {
   margin-left:70%;
   margin-bottom: 40px;
+  background-color: $text-color-dark;
+  color: white;
+  font-family: $readMore-font ;
+  padding: 10px;
+  
+  
+}
+
+@include mq($desktopMedium){
+
+  article{
+    height:475px;
+  }
+  figure{
+    padding-left:171.5px;
+  }
+
 }
