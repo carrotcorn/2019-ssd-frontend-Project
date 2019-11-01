@@ -1,15 +1,19 @@
 // Main Styles
 main {
     padding: $padding;    
+    display: flex;
+    flex-direction: column;
 
     section:not(:first-child) {
         margin-top: $padding;
     }
     
     .gallery{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         .gallery-item{
             position: relative;
-           
             figure{
                 display: inline-block;
                 margin: 0;
@@ -35,6 +39,71 @@ main {
                 }
             }
         }
+ 
+    }
+
+    .recipes{
+        order: 1;
+    }
+    .cuisines{
+        order: 2;
+    }
+
+    .posts{
+        order: 3;
+    }
+
+    @include mq($phoneLandscape){
+
+        .gallery{
+
+                flex-direction: row;
+                flex-wrap: wrap;
+
+                .galler-item-01{
+                    flex: 0 0 100%;
+                }
+
+                .galler-item-02{
+                    flex: 0 0 50%;
+                }
+
+                .galler-item-03{
+                    flex: 0 0 50%;
+                }
+        }
         
     }
+
+    @include mq($desktopMedium){
+        display: grid;
+        //grid-template-columns: 1fr repeat(2,350px) minmax(150px, auto) 1fr;
+        grid-template-columns: 1fr repeat(2,minmax(300px,auto)) 150px 1fr;
+        grid-template-rows: 408px 250px repeat(2,386px);
+        // grid-template-rows:minmax(408px, auto) minmax(250px, auto) repeat(2,386px);
+        grid-gap: 1px;
+        .gallery{
+            grid-column: 2 / span 2;
+            grid-row: 1 / span 2; 
+            border: 1px solid black; 
+        }
+
+        .recipes{
+            grid-column: 4 / span 1;
+            grid-row: 1 / span 1;  
+        }
+
+        .cuisines{
+            grid-column: 4 / span 1;
+            grid-row: 2 /span 2;  
+        }
+
+        .posts{
+            grid-column: 2 / span 2;
+            grid-row: 3 / span 2;  
+        }
+
+
+    }
+
 }
