@@ -1,11 +1,14 @@
 
 .cuisines{
   background-color: #fff;
- margin:10px;
+  margin:10px;
+    max-height: 67%;
+  
 
   
 
 h2{
+  padding-left: 10px;
   margin: 0;
   color: white;
   background-color:$navbar-color;
@@ -14,8 +17,6 @@ h2{
 ul{
   display: flex;
   flex-wrap: wrap;
-  // justify-content: space-between;
-  // height:100%;
   padding:0;
   padding: 10px;
   
@@ -26,9 +27,17 @@ li{
   &:nth-child(odd){width: 110px;}
   &:nth-child(even){width: calc(100% - 110px);padding-left: 10px;}
   
-};
+}
 
+@include mq($tabletPortrait){
+//   section.cuisines{
+//     height:60%;
+// }
+
+}
 @include mq($desktopMedium){
+
+
   ul{
     flex-direction: column;
   }

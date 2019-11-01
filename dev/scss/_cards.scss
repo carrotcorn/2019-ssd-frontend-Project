@@ -1,54 +1,57 @@
  .posts { 
 
-  article{
-    margin-top:10px;
-    height: 400px;
-    max-width:100%;                                                         ;
-    padding: 20px;
-    margin:10px 0 0 0;
-    box-sizing: border-box;
-    font-family: $navbar-font;
-    background-color: #fff;
-    position: relative;
-     // @include margin-center;
+    article{
+      margin-top:10px;
+      // height: 400px;
+      //height: 800px;
+      max-width:100%;                                                         ;
+      padding: 20px;
+      margin:10px 0 0 0;
+      box-sizing: border-box;
+      font-family: $navbar-font;
+      background-color: #fff;
+      display:flex;
+      flex-direction: column;
+      // @include margin-center;
 
-   }
-   h2{
-     font-family: $heading-font;
-     color: $text-color-dark;
-     padding-left:20px;
-   }
-   p{
-     padding-left:20px;
-   }
-   img{
-     max-width: 100%;
-   }
-   
-   #card {
-     margin-left:70%;
-     margin-bottom: 40px;
-     background-color: $text-color-dark;
-     color: white;
-     font-family: $readMore-font ;
-     padding: 10px;
-     position: absolute;
-   
-   }
-
+    }
+    h2{
+      font-family: $heading-font;
+      color: $text-color-dark;
+      padding-left:20px;
+    }
+    p{
+      padding-left:20px;
+    }
+    
+    .cardPic{
+      width:100%;
+    }
+    
+    .btn-read-more {
+      margin-left:70%;
+      margin-bottom: 40px;
+      background-color: $text-color-dark;
+      color: white;
+      font-family: $readMore-font ;
+      font-size: 2em;
+      padding: 10px;
+      align-self:flex-end;
+      
+    
+    }
+  }
   
    
-   @include mq($desktopMedium){
+//    @include mq($desktopMedium){
    
-     article{
-       height:475px;
-     }
-     figure{
-       padding-left:25%;
-     }
+//     //  article{
+//     //    height:475px;
+//     //  }
+//     .btn-read-more{
+//       margin-bottom:10
+//     }
 
 
 
-
-}
- }
+// }
