@@ -1,6 +1,7 @@
 // Wrapper styles
 .wrapper {
     max-width: 1200px;
+    min-height: 100vh;
     @include margin-center;
     background-color: $wrapper-bg-color;
 }
