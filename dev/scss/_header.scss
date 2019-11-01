@@ -1,71 +1,79 @@
 // Header styles
 header {
-    background-color: $header-color;
-    padding: $padding $padding/2;
-    @include flex-layout-row;
-    align-items: center;
-
-
-    .logo{
-        background-image: url("../images/small_logo.jpg");
-        width: 55px;
-        height: 35px;
-        padding: 0 10px;
+    .outer-row-wrapper {
+        background-color: $header-color;
     }
 
-    .icon{
-        display: none;
-    }
+    .row1{
+        width: 100%;      
+        padding: $padding $padding/2;
+        @include flex-layout-row;
+        align-items: center;
+        max-width: 1200px;
+        @include margin-center;
 
-    @include mq($phoneLandscape){
         .logo{
-            background-image: url("../images/logo.png");
-            width: 315px;
+            background-image: url("../images/small_logo.jpg");
+            width: 55px;
             height: 35px;
+            padding: 0 10px;
         }
 
         .icon{
             display: none;
         }
-    }
 
-    @include mq($tabletLandscape){
-        .icon{
-            display: block;
-            ul{
-               
-                @include flex-layout-row;
-                li{
-                    padding: 5px 10px;
-                    background-color:transparent;
-                    list-style: none;
-                        i{
-                            list-style: none;
-                            color:$navbar-color;
-                            font-size: 2em;
-                        }
-                      
-                    }
+        @include mq($phoneLandscape){
+            .logo{
+                background-image: url("../images/logo.png");
+                width: 315px;
+                height: 35px;
+            }
+
+            .icon{
+                display: none;
             }
         }
-    }
 
-    @include mq($desktopMedium){
+        @include mq($tabletLandscape){
+            .icon{
+                display: block;
+                ul{
+                
+                    @include flex-layout-row;
+                    li{
+                        padding: 5px 10px;
+                        background-color:transparent;
+                        list-style: none;
+                            i{
+                                list-style: none;
+                                color:$navbar-color;
+                                font-size: 2em;
+                            }
+                        
+                        }
+                }
+            }
+        }
 
-        @include flex-layout-row;
-        padding: $padding/4;
-        .logo{
-            order: 1;
-            // flex: 0 0 50%;
+        @include mq($desktopMedium){
+
+            @include flex-layout-row;
+            padding: $padding/4;
+            .logo{
+                order: 1;
+                // flex: 0 0 50%;
+            }
+            
+            .icon{
+                display: block;
+                // flex: 0 0 50%;
+                order: 1;
+            }
+            
+            
+            
         }
-        
-        .icon{
-            display: block;
-            // flex: 0 0 50%;
-            order: 1;
-        }
-        
-           
-        
-    }
+
+}
 }

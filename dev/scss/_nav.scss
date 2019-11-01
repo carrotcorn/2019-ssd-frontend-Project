@@ -2,20 +2,21 @@
 nav {
     // locally scoped variable
     $height: 40px;
-    background-color: $navbar-color;
+    background-color:$navbar-color;
     display: none;
-    width: 100%;
     
     .show & {
         display: block;
         transition: height 0.3s ease, visibility 0s;
         visibility: visible;
-        // height: 253px;
     }
 
     ul {
         @include flatten;
         list-style: none;
+        background-color: $navbar-color-light;
+        max-width: 1200px;
+        
     }
 
     a {
@@ -39,15 +40,22 @@ nav {
         display: block;
         height: $height;
         border-top: $border;
-        flex: 1 1 100%;;
         order: 2;
         ul {
             display: flex;
+            @include margin-center;
+
+            li {
+                flex: 1;
+
+                &:last-child{
+                    flex: 0;
+                }
+            }
+
         }
 
-        li {
-            flex: 1;
-        }
+        
 
         a {
             line-height: $height;
@@ -62,6 +70,16 @@ nav {
     @include mq($desktopMedium) {
     
         display: block;
+
+        ul{
+            li {
+                &:last-child{
+                    flex: 1 1 25%;
+                }
+            }
+
+        }
+      
     }
 
 }
