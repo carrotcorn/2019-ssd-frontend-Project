@@ -14,13 +14,16 @@ form{
     }
     .search-btn{
         background-image: url("../images/search.png");
-        padding: 12px;
+        margin: 5px;
         border: none;
+        width: 24px;
+        height: 24px;
     }
 
     @include mq($tabletLandscape){
         &.search-tablet {
-            display: block;
+            display: flex;
+            justify-content: space-between;
         }
         &.search-mobile-desktop{
             display: none;
@@ -35,7 +38,8 @@ form{
         }
 
         &.search-mobile-desktop{
-            display: block;
+           display: flex;
+           justify-content: space-between;
         }
         
     }
