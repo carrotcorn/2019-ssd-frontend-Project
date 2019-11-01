@@ -97,6 +97,7 @@ main {
         .cuisines{
             grid-column: 2 / 3;
             grid-row: 2 / 4;
+            align-self: start;
         }
 
         .posts{

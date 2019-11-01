@@ -2,7 +2,7 @@
 .cuisines{
   background-color: #fff;
   margin:10px;
-  max-width: height 360px;;
+  margin-bottom:700px;
   
 
   
@@ -37,7 +37,9 @@ li{
 
 }
 @include mq($desktopMedium){
-
+  .cuisines{
+    max-height: 600px;
+  }
 
   ul{
     flex-direction: column;
