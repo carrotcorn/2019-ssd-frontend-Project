@@ -7,6 +7,12 @@ form{
         display: none;
     }
 
+    &.search-mobile-desktop{
+        display: flex;
+        justify-content: space-between;
+    }
+
+
     input{
         background-color: $bg-color;
         border:none;
