@@ -3,52 +3,42 @@
   background-color: #fff;
   margin:10px;
   max-width: height 360px;;
-  
 
-  
-
-h2{
-  padding-left: 10px;
-  margin: 0;
-  color: white;
-  background-color:$navbar-color;
-  
-}
-ul{
-  display: flex;
-  flex-wrap: wrap;
-  padding:0;
-  padding: 10px;
-  
-  
-}
-li{
-  
-  list-style-type: none;
-  &:nth-child(odd){width: 110px;}
-  &:nth-child(even){width: calc(100% - 110px);padding-left: 10px;}
-  
-}
-
-@include mq($tabletPortrait){
-.cuisines{
-  max-height:360px;
-}
-
-}
-@include mq($desktopMedium){
-
-
+  h2{
+    padding-left: 10px;
+    margin: 0;
+    color: white;
+    background-color:$navbar-color; 
+  }
   ul{
-    flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
+    padding:0;
+    padding: 10px;  
   }
   li{
-    
-    margin: 0;
-    margin-bottom:0;
-    &:nth-child(odd){width: 110px;padding-left:5px}
-  &:nth-child(even){width: calc(100% - 110px);padding-left: 5px;}
-  };
-}
+    list-style-type: none;
+    &:nth-child(odd){width: 110px;}
+    &:nth-child(even){width: calc(100% - 110px);padding-left: 10px;} 
+  }
 
+  @include mq(em(500)){
+  //max-height:360px;
+    li{
+      &:nth-child(odd){width: 150px; padding: 0;}
+      &:nth-child(even){width: 150px; padding: 0;} 
+      &:nth-child(3n){width: calc(100% - 400px); padding: 0;} 
+    }
+  }
+  @include mq($desktopMedium){
+    ul{
+      flex-direction: column;
+    }
+    li{
+      margin: 0;
+      margin-bottom:0;
+      &:nth-child(odd){width: 110px;padding-left:5px}
+    &:nth-child(even){width: calc(100% - 110px);padding-left: 5px;}
+    };
+  }
 }
